@@ -2,3 +2,6 @@
 
 # lancer le conteneur
 ```
+docker run -it sebstinkeste/nginx bash
+
+```
