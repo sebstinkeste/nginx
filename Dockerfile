@@ -8,7 +8,7 @@ COPY nginx.conf /etc/nginx/sites-available/user-40.conf
 RUN ln -s /etc/nginx/sites-available/user-40.conf /etc/nginx/sites-enabled
 
 COPY entrypoint.sh /entrypoint.sh
-RUN chmod a+x /entrypoint.sh
+RUN chmod +rx /entrypoint.sh
 
 EXPOSE 80 443
 
