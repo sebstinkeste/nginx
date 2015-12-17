@@ -7,6 +7,8 @@ COPY nginx.conf /etc/nginx/user-40.conf
 COPY nginx.conf /etc/nginx/sites-available/user-40.conf
 RUN ln -s /etc/nginx/sites-available/user-40.conf /etc/nginx/sites-enabled
 
+RUN rm -f /etc/nginx/conf.d/default.conf
+
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh
 
