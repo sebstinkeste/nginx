@@ -12,6 +12,6 @@ RUN chmod 755 /entrypoint.sh
 
 EXPOSE 80 443
 
-WORKDIR /var/www
+WORKDIR /var/www/
 
 CMD ["/entrypoint.sh"]
