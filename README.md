@@ -36,4 +36,4 @@ environment:
 [DEPRECATED] Future versions of Docker will not support links - you should remove them for forwards-compatibility.
 
 # Contributors
-..*  [Sébastien Stinkeste](https://github.com/sebstinkeste)
+*  [Sébastien Stinkeste](https://github.com/sebstinkeste)
