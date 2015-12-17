@@ -1,7 +1,7 @@
 FROM nginx
 
 MAINTAINER  Sébastien.Stinkeste (sebastien.stinkeste@alterway.fr)
-
+RUN apt-get update && apt-get install -y nano 
 COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY nginx.conf /etc/nginx/sites-available/nginx.conf
