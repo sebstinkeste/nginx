@@ -10,6 +10,7 @@ RUN ln -s /etc/nginx/sites-available/user-40.conf /etc/nginx/sites-enabled
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh
 
+RUN ln -s /usr/share/nginx/html /var/www
 EXPOSE 80 443
 
 WORKDIR /var/www/
