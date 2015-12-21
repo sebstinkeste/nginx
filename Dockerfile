@@ -14,6 +14,6 @@ RUN chmod 755 /entrypoint.sh
 
 EXPOSE 80 443
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /var/www
 
 CMD ["/entrypoint.sh"]
