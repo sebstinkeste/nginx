@@ -9,7 +9,7 @@ ln -sf /usr/share/zoneinfo/${LOCALTIME:-Europe/Paris} /etc/localtime
 # functions
 
 
-replace_vars '/etc/nginx/nginx.conf'
+
 
 # Run
 if [[ ! -z "$1" ]]; then
