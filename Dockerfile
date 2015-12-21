@@ -4,7 +4,8 @@ MAINTAINER  Sébastien.Stinkeste (sebastien.stinkeste@alterway.fr)
 
 COPY nginx.conf /etc/nginx/nginx2.conf
 COPY nginx.conf /etc/nginx/conf.d/nginx2.conf
-RUN rm -f /etc/nginx/conf.d/default.conf
+RUN mv /etc/nginx/conf.d/default.conf /etc/nginx/
+RUN rm -rf /etc/nginx/conf.d
 COPY nginx.conf /etc/nginx/sites-available/nginx2.conf
 RUN ln -s /etc/nginx/sites-available/nginx2.conf /etc/nginx/sites-enabled
 
