@@ -15,7 +15,7 @@ EOF
   " > $1
 }
 
-replace_vars '/etc/nginx/default.conf'
+replace_vars '/etc/nginx/nginx2.conf'
 
 # Run
 if [[ ! -z "$1" ]]; then

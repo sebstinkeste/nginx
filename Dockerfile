@@ -2,8 +2,8 @@ FROM nginx
 
 MAINTAINER  Sébastien.Stinkeste (sebastien.stinkeste@alterway.fr)
 
-COPY nginx.conf /etc/nginx/sites-available/default.conf
-RUN ln -s /etc/nginx/sites-available/default.conf /etc/nginx/sites-enabled
+COPY nginx.conf /etc/nginx/sites-available/nginx2.conf
+RUN ln -s /etc/nginx/sites-available/nginx2.conf /etc/nginx/sites-enabled
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh
