@@ -8,14 +8,13 @@ ln -sf /usr/share/zoneinfo/${LOCALTIME:-Europe/Paris} /etc/localtime
 #
 # functions
 
-function replace_vars() {
-  eval "cat <<EOF
-  $(<$1)
-EOF
-  " > $1
+function set_conf {
+    echo ''>$2; IFSO=$IFS; IFS=$(echo -en "\n\b")
+    for c in `printenv|grep $1`; do echo "`echo $c|cut -d "=" -f1|awk -F"$1" '{print $2}'` $3 `echo $c|cut -d "=" -f2`" >> $2; done;
+    IFS=$IFSO
 }
 
-replace_vars '/etc/nginx/nginx2.conf'
+set_conf '/etc/nginx/nginx2.conf' 
 
 # Run
 if [[ ! -z "$1" ]]; then
