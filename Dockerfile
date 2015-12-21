@@ -2,7 +2,7 @@ FROM nginx
 
 MAINTAINER  Sébastien.Stinkeste (sebastien.stinkeste@alterway.fr)
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 
 COPY nginx.conf /etc/nginx/sites-available/nginx2.conf
 RUN ln -s /etc/nginx/sites-available/nginx2.conf /etc/nginx/sites-enabled
