@@ -14,7 +14,7 @@ function set_conf {
     IFS=$IFSO
 }
 
-set_conf '/etc/nginx/nginx2.conf' 
+set_conf '/etc/nginx/default.conf' 
 
 # Run
 if [[ ! -z "$1" ]]; then
