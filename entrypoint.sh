@@ -18,5 +18,5 @@ replace_vars "/etc/nginx/conf.d/default.conf"
 if [[ ! -z "$1" ]]; then
     exec ${*}
 else
-    exec nginx -g 'daemon on;'
+    exec nginx -g 'daemon off;'
 fi
