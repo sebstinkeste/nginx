@@ -14,3 +14,5 @@ EXPOSE 80 443
 WORKDIR /var/www
 
 CMD ["/entrypoint.sh"]
+
+######## ca pointe pas  dans le var/www mais le server fonctionne.. probleme de complétion du fichier de conf nginx  #######""
